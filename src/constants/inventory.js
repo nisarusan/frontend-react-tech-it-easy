@@ -32,7 +32,6 @@ export const bestSellingTv = {
             applicable: false
         }
     ],
-    originalStock: 52,
     sold: 17,
 }
 
@@ -327,5 +326,4 @@ export let inventory = [
         sold: 8,
     },
 ];
-
 

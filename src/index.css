@@ -1,14 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;500&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-  font-family: 'Zen Kaku Gothic New', Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+    font-family: 'Zen Kaku Gothic New', Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+section.dashboard {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.box {
+    padding: 4rem 0;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+.red {
+    color: red;
+    background-color: rgba(134, 7, 7, 0.2);
+    border: 2px solid red;
+}
+.blue {
+    color: rgb(0, 44, 66);
+    background-color: rgb(19, 146, 222);
+    border: 2px solid rgb(0, 44, 66);
+}
+
+.green {
+    color: green;
+    background-color: rgba(80, 210, 51, 0.2);
+    border: 2px solid green;
+}
+
+
+.box-sell {
+    display: flex;
+    background-color: rgba(217, 217, 217, 0.3);
+    border: 2px dashed black;
+    border-radius: 0.2rem;
 }
