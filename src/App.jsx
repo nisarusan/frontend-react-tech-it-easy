@@ -1,5 +1,15 @@
 import './App.css';
-import {bestSell, totalForSale, totalInventory, totalInventorySold, bestSellingTv, inventory} from "./helper/helper.js";
+import {
+    bestSell,
+    totalForSale,
+    totalInventory,
+    totalInventorySold,
+    bestSellingTv,
+    inventory,
+    tvBrand,
+    tvSizes,
+    tvOptions
+} from "./helper/helper.js";
 
 
 function App() {
@@ -28,37 +38,37 @@ function App() {
                         <img src={bestSellingTv.sourceImg} alt={bestSellingTv.sourceImg}/>
                     </div>
                     <div className="summary">
-                        <h2>{bestSellingTv.brand} {bestSellingTv.name} {bestSellingTv.type} - {bestSellingTv.screenQuality}</h2>
+                        <h2>{tvBrand}</h2>
                         <p><strong>€{bestSellingTv.price}</strong></p>
                         <ul className="spec">
                             <li>
-                                {bestSellingTv.availableSizes[0]} inch ({bestSellingTv.availableSizes[0] * 2.54}) |
+                                {tvSizes(0)}
                             </li>
                             <li>
-                                {bestSellingTv.availableSizes[1]} inch ({bestSellingTv.availableSizes[1] * 2.54}) |
+                                {tvSizes(1)}
                             </li>
                             <li>
-                                {bestSellingTv.availableSizes[2]} inch ({bestSellingTv.availableSizes[2] * 2.54}) |
+                                {tvSizes(2)}
                             </li>
                             <li>
-                                {bestSellingTv.availableSizes[3]} inch ({bestSellingTv.availableSizes[3] * 2.54})
+                                {tvSizes(3)}
                             </li>
                         </ul>
                         <ul className="icons">
                             <div className="check">
-                                <li>{bestSellingTv.options[0].name}</li>
+                                <li>{tvOptions(0)}</li>
                             </div>
                             <div className="check">
-                                <li>{bestSellingTv.options[1].name}</li>
+                                <li>{tvOptions(1)}</li>
                             </div>
                             <div className="check">
-                                <li>{bestSellingTv.options[2].name}</li>
+                                <li>{tvOptions(2)}</li>
                             </div>
                             <div className="check">
-                                <li>{bestSellingTv.options[3].name}</li>
+                                <li>{tvOptions(3)}</li>
                             </div>
                             <div className="check">
-                                <li>{bestSellingTv.options[4].name}</li>
+                                <li>{tvOptions(4)}</li>
                             </div>
                         </ul>
                     </div>

@@ -18,3 +18,23 @@ export let totalSold = totalInventorySold + bestSell;
 export let totalForSale = totalInventory - totalSold + bestSell;
 // export default ProductSalesCalculator;
 
+
+
+// Opdracht 2
+//Productweergave tv
+export let tvBrand = `${bestSellingTv.brand} ${bestSellingTv.name} ${bestSellingTv.type} - ${bestSellingTv.screenQuality}`;
+
+//Tv inc cm weergave
+
+export const tvSizes = (index) => {
+    const inches = bestSellingTv.availableSizes[index];
+    const centimeters = inches * 2.54;
+    return `${inches} inch (${centimeters} cm) |`;
+}
+
+//Tv Options
+export const tvOptions = (index) => {
+    return bestSellingTv.options[index].name;
+}
+
+

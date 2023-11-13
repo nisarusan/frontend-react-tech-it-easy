@@ -70,6 +70,7 @@ section.dashboard {
     background-color: rgba(217, 217, 217, 0.5);
     border: 2px dashed black;
     border-radius: 0.2rem;
+    margin-bottom: 2rem;
 }
 
 .img-wrapper {
