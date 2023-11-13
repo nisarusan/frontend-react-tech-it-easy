@@ -24,19 +24,42 @@ function App() {
                 </section>
                 <h2>Best verkochte tv</h2>
                 <div className="box-sell">
-                    <img src={bestSellingTv.sourceImg} alt={bestSellingTv.sourceImg}/>
+                    <div className="img-wrapper">
+                        <img src={bestSellingTv.sourceImg} alt={bestSellingTv.sourceImg}/>
+                    </div>
                     <div className="summary">
                         <h2>{bestSellingTv.brand} {bestSellingTv.name} {bestSellingTv.type} - {bestSellingTv.screenQuality}</h2>
-                        <p>€{bestSellingTv.price}</p>
-                        <p>{bestSell}</p>
+                        <p><strong>€{bestSellingTv.price}</strong></p>
                         <ul className="spec">
                             <li>
-                                {bestSellingTv.availableSizes[0]}
+                                {bestSellingTv.availableSizes[0]} inch ({bestSellingTv.availableSizes[0] * 2.54}) |
+                            </li>
+                            <li>
+                                {bestSellingTv.availableSizes[1]} inch ({bestSellingTv.availableSizes[1] * 2.54}) |
+                            </li>
+                            <li>
+                                {bestSellingTv.availableSizes[2]} inch ({bestSellingTv.availableSizes[2] * 2.54}) |
+                            </li>
+                            <li>
+                                {bestSellingTv.availableSizes[3]} inch ({bestSellingTv.availableSizes[3] * 2.54})
                             </li>
                         </ul>
                         <ul className="icons">
-                            <li className="check">{bestSellingTv.options[0].name}</li>
-                            <li className="neutral">{bestSellingTv.options[1].name}</li>
+                            <div className="check">
+                                <li>{bestSellingTv.options[0].name}</li>
+                            </div>
+                            <div className="check">
+                                <li>{bestSellingTv.options[1].name}</li>
+                            </div>
+                            <div className="check">
+                                <li>{bestSellingTv.options[2].name}</li>
+                            </div>
+                            <div className="check">
+                                <li>{bestSellingTv.options[3].name}</li>
+                            </div>
+                            <div className="check">
+                                <li>{bestSellingTv.options[4].name}</li>
+                            </div>
                         </ul>
                     </div>
                 </div>
