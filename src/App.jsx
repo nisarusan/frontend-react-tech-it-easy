@@ -8,7 +8,8 @@ import {
     inventory,
     tvBrand,
     tvSizes,
-    tvOptions
+    tvOptions,
+    sourceImg
 } from "./helper/helper.js";
 
 
@@ -35,7 +36,7 @@ function App() {
                 <h2>Best verkochte tv</h2>
                 <div className="box-sell">
                     <div className="img-wrapper">
-                        <img src={bestSellingTv.sourceImg} alt={bestSellingTv.sourceImg}/>
+                        <img src={sourceImg} alt={bestSellingTv.sourceImg}/>
                     </div>
                     <div className="summary">
                         <h2>{tvBrand}</h2>

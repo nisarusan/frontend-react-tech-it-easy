@@ -1,4 +1,6 @@
 import {inventory, bestSellingTv} from "../constants/inventory.js";
+export const {type, name, price} = inventory;
+export const {sourceImg} = bestSellingTv;
 
 export {bestSellingTv, inventory};
 //total inventory check
