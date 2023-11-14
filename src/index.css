@@ -119,5 +119,15 @@ img {
     background-size: 15px;
 }
 
+.neutral {
+    /*margin-right: 1rem;*/
+    margin: 0;
+    padding: 3rem 0 3rem 1rem;
+    list-style: none;
+    background-image: url("./assets/minus.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px;
+}
 
 

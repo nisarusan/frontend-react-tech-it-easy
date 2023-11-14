@@ -1,8 +1,8 @@
 import './App.css';
 import {
-    totalForSale, totalInventory, totalInventorySold, tvBrand, tvSizes, tvOptions,
-    sourceImg, bestPrice
-} from "./helper/helper.js";
+    totalForSale, totalInventory, totalInventorySold, tvBrand, tvSizes,
+    sourceImg, bestPrice, tvSorted
+} from "./helper/helper.jsx";
 
 function App() {
     return (
@@ -33,35 +33,10 @@ function App() {
                         <h2>{tvBrand}</h2>
                         <p><strong>€{bestPrice}</strong></p>
                         <ul className="spec">
-                            <li>
-                                {tvSizes(0)}
-                            </li>
-                            <li>
-                                {tvSizes(1)}
-                            </li>
-                            <li>
-                                {tvSizes(2)}
-                            </li>
-                            <li>
-                                {tvSizes(3)}
-                            </li>
+                            {tvSizes}
                         </ul>
                         <ul className="icons">
-                            <div className="check">
-                                <li>{tvOptions(0)}</li>
-                            </div>
-                            <div className="check">
-                                <li>{tvOptions(1)}</li>
-                            </div>
-                            <div className="check">
-                                <li>{tvOptions(2)}</li>
-                            </div>
-                            <div className="check">
-                                <li>{tvOptions(3)}</li>
-                            </div>
-                            <div className="check">
-                                <li>{tvOptions(4)}</li>
-                            </div>
+                            {tvSorted}
                         </ul>
                     </div>
                 </div>
@@ -69,4 +44,5 @@ function App() {
         </>
     )
 }
+
 export default App
