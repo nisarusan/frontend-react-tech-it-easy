@@ -1,4 +1,5 @@
 import {inventory, bestSellingTv} from "../constants/inventory.js";
+
 export const {type} = inventory;
 export const {
     sourceImg,
@@ -30,11 +31,8 @@ export let totalForSale = totalInventory - totalSold + bestSell;
 // Opdracht 2
 //Productweergave tv
 export let tvBrand = `${brand} ${nameBestTv} ${bestType} - ${screenQuality}`;
-export const tvSizes = availableSizes.map(sizes => <li>{sizes} inch {sizes * 2.54} cm - </li>)
-
-export const tvSorted = options.map(option => <div className={option.applicable ? "check" : "neutral"}
-                                                   key={option.name}>
-    <li>{option.name}</li>
+export const tvSizes = availableSizes.map(sizes => <li key={tvBrand}>{sizes} inch {sizes * 2.54} cm - </li>)
+export const tvSorted = options.map(option => <div className={option.applicable ? "check" : "neutral"} key={option.name}> <li>{option.name}</li>
 </div>);
 
 //old method with only one check or else
