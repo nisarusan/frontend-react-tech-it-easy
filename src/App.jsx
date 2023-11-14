@@ -1,17 +1,8 @@
 import './App.css';
 import {
-    bestSell,
-    totalForSale,
-    totalInventory,
-    totalInventorySold,
-    bestSellingTv,
-    inventory,
-    tvBrand,
-    tvSizes,
-    tvOptions,
-    sourceImg
+    totalForSale, totalInventory, totalInventorySold, tvBrand, tvSizes, tvOptions,
+    sourceImg, bestPrice
 } from "./helper/helper.js";
-
 
 function App() {
     return (
@@ -33,14 +24,14 @@ function App() {
                         <p>{totalForSale}</p>
                     </div>
                 </section>
-                <h2>Best verkochte tv</h2>
+                <h2>Best verkocht tv</h2>
                 <div className="box-sell">
                     <div className="img-wrapper">
-                        <img src={sourceImg} alt={bestSellingTv.sourceImg}/>
+                        <img src={sourceImg} alt={sourceImg}/>
                     </div>
                     <div className="summary">
                         <h2>{tvBrand}</h2>
-                        <p><strong>€{bestSellingTv.price}</strong></p>
+                        <p><strong>€{bestPrice}</strong></p>
                         <ul className="spec">
                             <li>
                                 {tvSizes(0)}
@@ -78,5 +69,4 @@ function App() {
         </>
     )
 }
-
 export default App
