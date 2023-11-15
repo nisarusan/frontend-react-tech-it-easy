@@ -1,5 +1,4 @@
 import {inventory, bestSellingTv} from "../constants/inventory.js";
-
 export const {type} = inventory;
 export const {
     sourceImg,
