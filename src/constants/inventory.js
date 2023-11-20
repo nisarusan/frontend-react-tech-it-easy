@@ -327,3 +327,16 @@ export let inventory = [
     },
 ];
 
+
+inventory.map(item => {
+    if(item.applicable) {
+        console.log("check");
+        console.log(item.options);
+
+    } else {
+        console.log("neutral");
+        console.log(item.options);
+
+    }
+})
+
